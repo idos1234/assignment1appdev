@@ -1,13 +1,55 @@
 #facebookHeader{
     text-align: center;
-    color: rgb(49, 49, 255);
+    color: rgb(75, 75, 200);
 
 }
 body{
-    background-color: rgb(212, 210, 210);
-}
-.class{
     text-align: center;
+    background-color: rgb(222, 222, 222);
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),0 8px 16px rgba(0, 0, 0, 0.1);
+    
 
 
+}
+#email_phonenumber{
+    width: 260px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
+#password{
+    width: 260px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
+#login_button{
+    width: 260px;
+    height: 45px;
+    background-color: rgb(70, 102, 219);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
