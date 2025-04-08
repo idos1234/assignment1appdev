@@ -1,6 +1,9 @@
 #facebookHeader{
-    text-align: center;
     color: rgb(75, 75, 200);
+    font-size: 50px;
+    position: relative;
+    right: 300px;
+    top: 175px;
 
 }
 body{
@@ -8,6 +11,8 @@ body{
     background-color: rgb(222, 222, 222);
 }
 .card{
+    position: relative;
+    left: 200px;
     background-color: rgb(255, 255, 255);
     margin:auto;
     text-align: center;
