@@ -1,8 +1,10 @@
+/*login css*/
+
 #facebookHeader{
     width: 240px;
     height: 80px;
 }
-body{
+#login_page_body{
     text-align: center;
     background-color: white;
 }
@@ -105,6 +107,7 @@ a{
     font-weight: bold;
     font-size: 15px;
     border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
 .line{
@@ -114,6 +117,55 @@ a{
     margin-bottom: 5px;
     width: 100%;
 }
+
+/*home page css*/
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.sidebar a span {
+    margin-top: 7px;
+}
+
+.sidebar div {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.sidebar div:hover {
+    background-color: #e1e1e1;
+}
+
+#user_image{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid lightgray
+}
+
+#see_more{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e2e5ea;
+    border: 1px solid #e2e5ea
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
