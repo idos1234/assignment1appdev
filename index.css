@@ -21,7 +21,7 @@ a:hover {
     text-decoration: underline;
 }
 
-a{
+#login_page_body a{
     color: #1877f2;
     font-size: 14px;
 }
@@ -129,12 +129,12 @@ a{
 
 /*side bar*/
 .sidebar {
-    display: fixed;
-    top: 0;
+    position: fixed;
     left: 0;
     width: 300px;
-    margin-top: 60px;
-    background-color: #f2f4f7;
+    min-height: 90%;
+    max-height: 90%;
+    overflow-y: auto;
 }
 
 .sidebar a {
@@ -166,11 +166,6 @@ a{
 
 
 /*menu links*/
-#menu_links {
-    position: absolute;
-    bottom: 0;
-    width: 300px;
-}
 
 #menu_links ul{
     display: flex;
@@ -179,12 +174,14 @@ a{
     font-size: 13px;
     font-weight: normal;
     gap: 1px;
+    padding: 10px;
 }
 
 #menu_links a{
     font-size: 13px;
     font-weight: normal;
-    gap: 0;
+    color: black;
+    text-decoration: none;
 }
 
 #menu_links ul li a:hover {
@@ -212,14 +209,13 @@ a{
 .top_menu{
     display: grid;
     grid-template-columns: auto auto auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
     height: 60px;
     box-shadow: 0 1px lightgray;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-
-    
+    background-color: #ffffff; 
 }
 
 .top_menu div{
@@ -299,39 +295,86 @@ a{
     border: 1px solid lightgray;
 }
 
+
+#main_content{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    padding: 32px;
+    gap: 20px;
+    list-style-type:none;
+}
+#whats_on_your_mind{
+    text-align: start;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    background-color: rgb(255, 255, 255);
+
+}
+
+#whats_on_your_mind #top {
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 20px;
+    width: 100%;
+}
+
+
+#whats_on_your_mind #question{
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    border-radius: 30px;
+    padding: 4px 12px 0 12px;
+    background-color: #f2f4f7;
+    color: black;
+
+}
+
+#whats_on_your_mind #question:hover{
+    background-color: #e1e1e1;
+    text-decoration: none;
+}
+
+#whats_on_your_mind #options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+}
+
+#whats_on_your_mind #options a:hover {
+    text-decoration: none;
+    background-color: #e1e1e1;
+}
+
+#whats_on_your_mind #options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 8px;
+}
+
+#whats_on_your_mind #options a span {
+    margin-top: 7px;
+}
+
+body {
+    background-color: #f2f4f7;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-.top_menu{
-    position:fixed;
-    top: 0;
-    z-index: 10;
-    
-    
-}
-#main_content{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    padding: 20px;
-    gap: 20px;
-    background-color: #f2f4f7;
-    
-}
-.whats_on_your_mind{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    margin-top: 60px;
-    width: 400px;
-    position: absolute;
-    bottom: 550px;
-    z-index: 1;
-    background: #fff;
-    border-radius: 8px;
-    padding: 30px 0px 30px 0px;
-    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
