@@ -415,7 +415,7 @@ a:hover {
 
 #upper_part_post_1{
     display: grid;
-    grid-template-columns: auto 45px;
+    grid-template-columns: auto 70px;
     gap: 20px;
     width: 100%;
     
@@ -427,6 +427,7 @@ a:hover {
 #options_post_1 {
     display: grid;
     grid-template-columns: auto auto ;
+    margin-top: 10px;
 }
 #username_direct{
     position: absolute;
@@ -461,15 +462,11 @@ a:hover {
     pointer-events: none;
 
 }
-#x_icon_post {
-    margin-top: -500px;
-}
-#x_icon_post :hover {
-    background-color: lightgray;
-    
-    
 
+#details_post_1 a:hover{
+    background-color: yellow;
 }
+
 
 body {
     background-color: #f2f4f7;
