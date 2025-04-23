@@ -126,6 +126,86 @@ a:hover {
 
 /*home page css*/
 
+/*group chats*/
+.right_bar {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 300px;
+    min-height: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    background-color: #f2f4f7;
+}
+
+.right_bar #c_h, .right_bar #g_h, .right_bar li div {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*contacts*/
+
+#contacts {
+    width: 100%;
+}
+
+#contacts a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.right_bar #c_h{
+    display: grid;
+    grid-template-columns: 40px auto;
+}
+
+.right_bar #c_h #options{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right_bar #c_h #options svg:hover{
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+
+.right_bar li div{
+    margin-left: -5px;
+}
+
+.right_bar #group_chats a{
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    color: black;
+    width: 100%;
+}
+
+.right_bar a:hover{
+    background-color: #e1e1e1;
+    text-decoration: none;
+}
+
+#create_group #create_button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: black;
+}
 
 /*side bar*/
 .sidebar {
@@ -135,6 +215,7 @@ a:hover {
     min-height: 90%;
     max-height: 90%;
     overflow-y: auto;
+    background-color: #f2f4f7;
 }
 
 .sidebar a {
@@ -160,7 +241,7 @@ a:hover {
     border-radius: 8px;
 }
 
-.sidebar div:hover:not(#menu_links) {
+.sidebar div div:hover:not(#menu_links) {
     background-color: #e1e1e1;
 }
 
@@ -385,7 +466,7 @@ a:hover {
 }
 
 #create_story a:hover{
-    background-color: lightgray;
+    background-color: #e1e1e1;
     text-decoration: none;
 }
 
