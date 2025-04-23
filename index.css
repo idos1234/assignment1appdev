@@ -295,19 +295,20 @@ a:hover {
     border: 1px solid lightgray;
 }
 
+/*main content*/
 
 #main_content{
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 750px;
-    padding: 32px;
-    gap: 20px;
+    width: 600px;
+    padding: 10px;
     list-style-type:none;
 }
-#whats_on_your_mind{
+#main_content li{
     text-align: start;
     width: 100%;
+    margin: 10px 0;
     padding: 14px;
     border-radius: 8px;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
@@ -331,7 +332,6 @@ a:hover {
     padding: 4px 12px 0 12px;
     background-color: #f2f4f7;
     color: black;
-
 }
 
 #whats_on_your_mind #question:hover{
@@ -365,6 +365,41 @@ a:hover {
 
 #whats_on_your_mind #options a span {
     margin-top: 7px;
+    color: black;
+}
+
+#create_story a{
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    color: black;
+    width: 100%;
+}
+
+#create_story a:hover{
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+#create_story #h {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+}
+
+#create_story #p {
+    font-size: 14px;
+}
+
+#create_story #create_button {
+    text-align: center;
+    width: 40px;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: #1876f21c;
+    color: #1877f2;
 }
 
 body {
