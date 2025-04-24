@@ -278,8 +278,8 @@ a:hover {
 }
 
 #user_image{
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid lightgray
 }
@@ -415,7 +415,7 @@ a:hover {
 #whats_on_your_mind #top {
     display: grid;
     grid-template-columns: 40px auto;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -606,12 +606,14 @@ a:hover {
     margin-top: auto;
     color: black;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .post #lower_part #top #right{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    gap: 8px;
 }
 
 .post #lower_part #top #right a {
@@ -619,6 +621,7 @@ a:hover {
     margin-top: auto;
     color: black;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .post #lower_part #bottom{
