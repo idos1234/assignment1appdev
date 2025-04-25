@@ -26,6 +26,9 @@ a:hover {
     font-size: 14px;
 }
 
+#form {
+    min-height: 540px;
+}
 
 .card{
     background-color: rgb(255, 255, 255);
@@ -643,6 +646,47 @@ a:hover {
 .post #lower_part #bottom span {
     margin-top: auto;
     color: black;
+}
+
+#new_message {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#new_message a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#new_message:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.31), 0 6px 20px 0 rgba(0, 0, 0, 0)
+}
+
+#new_message .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    z-index: 1;
+}
+
+#new_message:hover .tooltiptext {
+    visibility: visible;
 }
 
 
